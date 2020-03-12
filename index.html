@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sudoku Generator</title>
+   <!----> <link rel="stylesheet" href="/resources/style.css">
+</head>
+<body>
+    <h1>Play Sudoku!</h1>
+    <h4>Enter numbers here</h4>
+        <div type="submit" id="gamebox">
+            
+            <!--Top-Left Square-->
+            <div class="biginput" id="A1">
+                <input class="cell" value="" id="A1a1" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="A1a2" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="A1a3" min="1" max="9" type="number" required><br>
+                <input class="cell" value="" id="A1b1" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="A1b2" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="A1b3" min="1" max="9" type="number" required><br>
+                <input class="cell" value="" id="A1c1" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="A1c2" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="A1c3" min="1" max="9" type="number" required>
+            </div>
+            <!--Top-Center Square-->
+            <div class="biginput" id="A2">
+                <input class="cell" value="" id="A2a1" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="A2a2" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="A2a3" min="1" max="9" type="number" required><br>
+                <input class="cell" value="" id="A2b1" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="A2b2" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="A2b3" min="1" max="9" type="number" required><br>
+                <input class="cell" value="" id="A2c1" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="A2c2" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="A2c3" min="1" max="9" type="number" required>
+            </div>
+            <!--Top-Right Square-->
+            <div class="biginput" id="A3">
+                <input class="cell" value="" id="A3a1" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="A3a2" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="A3a3" min="1" max="9" type="number" required><br>
+                <input class="cell" value="" id="A3b1" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="A3b2" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="A3b3" min="1" max="9" type="number" required><br>
+                <input class="cell" value="" id="A3c1" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="A3c2" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="A3c3" min="1" max="9" type="number" required>
+            </div><br>
+            <!--Center-Left Square-->
+            <div class="biginput" id="B1">
+                <input class="cell" value="" id="B1a1" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="B1a2" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="B1a3" min="1" max="9" type="number" required><br>
+                <input class="cell" value="" id="B1b1" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="B1b2" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="B1b3" min="1" max="9" type="number" required><br>
+                <input class="cell" value="" id="B1c1" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="B1c2" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="B1c3" min="1" max="9" type="number" required>
+            </div>
+            <!--Center Square-->
+            <div class="biginput" id="B2">
+                <input class="cell" value="" id="B2a1" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="B2a2" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="B2a3" min="1" max="9" type="number" required><br>
+                <input class="cell" value="" id="B2b1" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="B2b2" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="B2b3" min="1" max="9" type="number" required><br>
+                <input class="cell" value="" id="B2c1" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="B2c2" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="B2c3" min="1" max="9" type="number" required>
+            </div>
+            <!--Center-Right Square-->
+            <div class="biginput" id="B3">
+                <input class="cell" value="" id="B3a1" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="B3a2" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="B3a3" min="1" max="9" type="number" required><br>
+                <input class="cell" value="" id="B3b1" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="B3b2" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="B3b3" min="1" max="9" type="number" required><br>
+                <input class="cell" value="" id="B3c1" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="B3c2" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="B3c3" min="1" max="9" type="number" required>
+            </div><br>
+            <!--Bottom-Left Square-->
+            <div class="biginput" id="C1">
+                <input class="cell" value="" id="C1a1" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="C1a2" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="C1a3" min="1" max="9" type="number" required><br>
+                <input class="cell" value="" id="C1b1" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="C1b2" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="C1b3" min="1" max="9" type="number" required><br>
+                <input class="cell" value="" id="C1c1" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="C1c2" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="C1c3" min="1" max="9" type="number" required>
+            </div>
+            <!--Bottom-Center Square-->
+            <div class="biginput" id="C2">
+                <input class="cell" value="" id="C2a1" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="C2a2" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="C2a3" min="1" max="9" type="number" required><br>
+                <input class="cell" value="" id="C2b1" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="C2b2" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="C2b3" min="1" max="9" type="number" required><br>
+                <input class="cell" value="" id="C2c1" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="C2c2" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="C2c3" min="1" max="9" type="number" required>
+            </div>
+            <!--Bottom-Right Square-->
+            <div class="biginput" id="C3">
+                <input class="cell" value="" id="C3a1" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="C3a2" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="C3a3" min="1" max="9" type="number" required><br>
+                <input class="cell" value="" id="C3b1" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="C3b2" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="C3b3" min="1" max="9" type="number" required><br>
+                <input class="cell" value="" id="C3c1" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="C3c2" min="1" max="9" type="number" required>
+                <input class="cell" value="" id="C3c3" min="1" max="9" type="number" required>
+            </div><br><br>
+
+            
+            
+        </div>
+        <div class="buttons">
+            <div id="reset">Reset</div>
+            <div id="finish">Submit</div>
+        </div>
+    
+    <script src="/resources/main.js"></script>
+</body>
+</html>

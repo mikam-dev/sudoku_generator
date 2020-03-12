@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #1f1f1f;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    color: #f7f7f7;
+    font-size: 12px;
+    display: flex;
+}
+
+body {
+    margin: auto;
+    margin-top: 60px;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+    margin: 20px;
+}
+
+#gamebox {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    flex: 1 1;
+}
+
+.biginput {
+    height: 150px;
+    width: 180px;
+    margin: 10px 0;
+    padding: 2px 0;
+    display: inline-block;
+    flex: 1 1;
+}
+
+
+input {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    height: 50px;
+    width: 50px;
+    margin: 1px 0;
+    padding-left: 3px;
+    display: inline-flex;
+    flex: 1 1;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: 20px auto
+}
+
+#reset {
+    height: 15px;
+    width: 50px;
+    background-color: #8a8a8a;
+    border: solid white 2px;
+}
+
+#reset:hover {
+    color: black;
+    background-color: rgba(255,255,255,0.9);
+    cursor: pointer;
+}
+
+#finish {
+    height: 15px;
+    width: 50px;
+    background-color: #8a8a8a;
+    border: solid white 2px;
+}
+
+#finish:hover {
+    color: black;
+    background-color: rgba(255,255,255,0.9);
+    cursor: pointer;
+}
